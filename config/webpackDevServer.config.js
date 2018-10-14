@@ -81,8 +81,8 @@ module.exports = function(proxy, allowedHost) {
     },
     public: allowedHost,
     proxy: {
-      '*': {
-        'target': 'http://localhost:3000/'
+      '/user/*': {
+        'target': 'http://localhost:9093/'
       }
     },
     before(app) {

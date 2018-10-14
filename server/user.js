@@ -70,10 +70,11 @@ Router.post('/update', function (req, res) {
   })
 });
 
-Router.get('/list', function (request, response) {
+Router.get('/list', function (req, res) {
+  const type = req.query.type;
   // User.remove({}, function (e, d) {});
-  User.find({}, function (err, doc) {
-    return response.json(doc)
+  User.find({type}, function (err, doc) {
+    return res.json(doc)
   })
 });
 

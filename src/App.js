@@ -6,10 +6,8 @@ import AuthRoute from './component/authroute';
 import BossInfo from './views/bossinfo';
 import GeniusInfo from './views/geniusinfo';
 import DashBoard from "./views/dashboard";
+import Boss from './component/boss'
 
-function Boss() {
-  return <h1>Boss</h1>
-}
 
 function Genius() {
   return <button>Genius</button>

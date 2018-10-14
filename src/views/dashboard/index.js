@@ -21,7 +21,7 @@ class DashBoard extends Component {
     const type = this.props.type;
     const navList = [
       {
-        path: '/boss',
+        path: '/genius',
         text: '牛人',
         icon: 'boss',
         title: '牛人列表',
@@ -29,7 +29,7 @@ class DashBoard extends Component {
         hide: type === 'genius'
       },
       {
-        path: '/genius',
+        path: '/boss',
         text: '牛人',
         icon: 'job',
         title: 'boss列表',

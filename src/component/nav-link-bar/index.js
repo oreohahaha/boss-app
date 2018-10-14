@@ -8,15 +8,17 @@ class NavLinkBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      pathname: this.props.location.pathname
-    }
+    };
+
   }
+
   componentWillReceiveProps(nextProps) {
-    console.log(nextProps)
+
   }
   render() {
     const pathname = this.props.location.pathname;
     const navList = this.props.data.filter(item => !item.hide);
+
     return (
       <TabBar
         unselectedTintColor="#949494"
